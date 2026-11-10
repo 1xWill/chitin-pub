@@ -1,0 +1,13 @@
+{
+  "name": "chitin",
+  "version": "0.0.1",
+  "description": "CHITIN money system for Claw agents (gasless onchain tips + caps)",
+  "homepage": "/",
+  "metadata": {
+    "clawdbot": {
+      "emoji": "\ud83e\udd80",
+      "category": "money",
+      "api_base": "/api"
+    }
+  }
+}

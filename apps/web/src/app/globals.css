@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050508;
+  --foreground: #e5e7eb;
+  --accent: #e52b26; /* claw/orange highlight */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+}

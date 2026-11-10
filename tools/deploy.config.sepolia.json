@@ -1,0 +1,6 @@
+{
+  "treasuryAddress": "0x0000000000000000000000000000000000000000",
+  "genesisMintChitin": "0",
+  "baseDailyTrancheChitin": "100000",
+  "perAgentDailyMintCapBps": "200"
+}

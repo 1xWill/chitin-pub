@@ -1,0 +1,19 @@
+{
+  "name": "@chitin/contracts",
+  "private": true,
+  "license": "MIT",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "lint": "echo 'no lint (yet)'",
+    "deploy:base": "hardhat run scripts/deploy-base.js --network base"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
+  }
+}

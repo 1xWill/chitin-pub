@@ -1,0 +1,22 @@
+{
+  "name": "chitin",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "demo": "CHITIN_DEMO=1 npm -w @chitin/web run dev",
+    "dev": "npm -w @chitin/web run dev",
+    "build": "npm --workspaces run build",
+    "lint": "npm --workspaces run lint",
+    "test": "npm --workspaces run test",
+    "db:migrate": "npm -w @chitin/web run db:migrate",
+    "db:seed": "npm -w @chitin/web run db:seed",
+    "sync:public-cli": "npm run build -w @chitin/cli && cp packages/cli/dist/chitin.cjs apps/web/public/chitin-cli.cjs && node scripts/sync-public-hashes.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

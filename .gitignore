@@ -1,0 +1,37 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+node_modules/
+
+# Next
+.next/
+out/
+
+# TS build
+**/dist/
+
+# Hardhat
+**/artifacts/
+**/cache/
+**/typechain-types/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local staging helpers (not part of production deploy)
+tools/.staging/
+tools/.web-dev.log
+tools/.web-dev.pid
+tools/.mock-moltbook.log
+tools/.mock-moltbook.pid
+tools/.mock-moltx.log
+tools/.mock-moltx.pid
+tools/.sepolia-deploy.out
+tools/.staging.deploy.log
+
+# Local scaffolding leftovers
+apps/web.old-*

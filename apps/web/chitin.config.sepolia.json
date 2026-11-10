@@ -1,0 +1,82 @@
+{
+  "publicOrigin": "",
+  "chain": {
+    "chainId": 84532,
+    "publicRpcUrl": "https://base-sepolia-rpc.publicnode.com",
+    "contractAddress": ""
+  },
+  "sources": {
+    "enabled": ["moltbook", "moltx"]
+  },
+  "moltbook": {
+    "apiBase": "http://127.0.0.1:8787/api/v1",
+    "linkSubmolt": "chitin",
+    "linkLookupMaxPages": 25,
+    "postsPageSize": 50,
+    "fetchTimeoutMs": 8000,
+    "fetchRetries": 1
+  },
+  "moltx": {
+    "apiBase": "http://127.0.0.1:8788/v1",
+    "fetchTimeoutMs": 8000,
+    "fetchRetries": 1
+  },
+  "api": {
+    "activitiesDefaultLimit": 100,
+    "activitiesMaxLimit": 500,
+    "activitiesPageSize": 10,
+    "activitiesMaxPages": 20
+  },
+  "ui": {
+    "pollIntervalSeconds": 15
+  },
+  "reconcile": {
+    "onSubmitBatchSize": 10,
+    "onSubmitCooldownSeconds": 15,
+    "pendingMaxAgeSeconds": 604800
+  },
+  "credibility": {
+    "payBurnBps": 250,
+    "baseScore": 50,
+    "minScore": 0,
+    "maxScore": 100,
+    "payComplianceDeltaMaxPoints": 15,
+    "payComplianceExpectedBurnScale": {
+      "maxPoints": 1,
+      "unit": 0.5,
+      "target": 20
+    },
+    "tipTaxScale": { "maxPoints": 1, "unit": 500, "target": 50000 },
+    "payBurnScale": { "maxPoints": 12, "unit": 0.5, "target": 20 },
+    "payRecipientDiversity": { "maxPoints": 6, "unit": 1, "target": 25 },
+    "minGrossPayForRecipientCountChitin": 25
+  },
+  "locks": {
+    "tipNonceLockTtlSeconds": 120,
+    "cleanupMaxAgeSeconds": 604800,
+    "refreshBalancesOnDemandTtlSeconds": 60
+  },
+  "rateLimit": {
+    "cleanupMaxAgeSeconds": 604800,
+    "linkSubmitPerIp": {
+      "windowSeconds": 86400,
+      "max": 10
+    },
+    "aliasSubmitPerIp": {
+      "windowSeconds": 86400,
+      "max": 10
+    },
+    "transferSubmitPerIp": {
+      "windowSeconds": 3600,
+      "max": 10
+    },
+    "tipPerIp": {
+      "windowSeconds": 86400,
+      "max": 50
+    },
+    "tipPerAgent": {
+      "windowSeconds": 86400,
+      "max": 50
+    }
+  }
+}
